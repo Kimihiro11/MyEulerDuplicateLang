@@ -11,7 +11,11 @@ int main()
     cin >> str;
     for (int i = 0; str[i]; i++)
     {
-        if (str[i] != '0')
+        if (i < 13)
+        {
+            now *= str[i] - '0';
+        }
+        else if (str[i] != '0')
         {
             now *= str[i] - '0';
         }
